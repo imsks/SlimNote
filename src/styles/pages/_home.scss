@@ -1,0 +1,58 @@
+.app-container{
+    height: 65rem;
+    width: 120rem;
+    background-color: $color-primary-light;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5rem $color-grey-dark-2;
+    // position: relative;
+}
+
+.navbar {
+    // position: absolute;
+    margin: 2rem 0 0 0rem;
+    background-color: $color-grey-light-1;
+    display: flex;
+    height: 10rem;
+    flex-direction: row;
+    position: relative;
+
+    &__functions {
+        position:inherit;
+        width: 10rem;
+        height: 5rem;
+        margin: auto 2rem;
+    }
+
+    &__style {
+        display: flex;
+        flex-direction: row;
+        
+        margin: auto 10rem;
+
+        &__buttons {
+            margin-left: 2rem;
+            width: 5rem;
+            height: 5rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+.contentarea {
+    &__form {
+        &__input {
+            box-shadow: 2px 2px 5rem $color-grey-dark-2;
+            margin: 2rem 10rem;
+            width: 100rem;
+            height: 45rem;
+            resize: none;
+            outline: 0;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
