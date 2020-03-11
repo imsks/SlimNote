@@ -12,7 +12,7 @@
     margin: 2rem 0 0 0rem;
     background-color: $color-grey-light-1;
     display: flex;
-    height: 10rem;
+    height: 6rem;
     flex-direction: row;
     position: relative;
 
@@ -44,9 +44,11 @@
             box-shadow: 2px 2px 5rem $color-grey-dark-2;
             margin: 2rem 10rem;
             width: 100rem;
-            height: 45rem;
+            height: 50rem;
             resize: none;
             outline: 0;
+            font-size: 3em;
+            font-family: Montserrat;
         }
     }
 }
