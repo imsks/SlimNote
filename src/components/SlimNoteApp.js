@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
 import ContentArea from './ContentArea';
 import Footer from './Footer';
 
@@ -19,7 +18,6 @@ export default class SlimNoteApp extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <Navbar />
         <ContentArea />
         <Footer />
       </div>

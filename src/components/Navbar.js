@@ -5,13 +5,25 @@ export default class Navbar extends React.Component {
         super(props);
     }
 
-    render() {
+    state = {
+        bold: '',
+    }
+
+    makeItAHeading = () => {
+        this.setState({
+            bold: 'bold'
+        });
+    }
+
+    render(props) {
+        let selection = this.props.selectText;
+
         return (
             <div className="navbar">
                 <button className="navbar__functions">New File</button>
                 <button className="navbar__functions">Share</button>
                 <div className="navbar__style">
-                    <button className="navbar__style__buttons">H</button>
+                    <button className="navbar__style__buttons" onClick={this.makeItAHeading()}>H</button>
                     <button className="navbar__style__buttons">Size</button>
                     <button className="navbar__style__buttons">B</button>
                     <button className="navbar__style__buttons">I</button>
@@ -23,6 +35,7 @@ export default class Navbar extends React.Component {
                     <button className="navbar__style__buttons">Add Link</button>
                     <button className="navbar__style__buttons">Align</button>
                 </div>
+                <span className={this.state.bold}>{selection}</span>
             </div>
         );
     }
